@@ -37,3 +37,10 @@ class CarFactory {
         return car
     }
 }
+
+let hugeCarOne = CarFactory.produceCar(type: .huge)
+hugeCarOne.drive()
+let fastCarOne = CarFactory.produceCar(type: .fast)
+fastCarOne.drive()
+let hugeCarTwo = CarFactory.produceCar(type: .huge)
+hugeCarTwo.drive()
