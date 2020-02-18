@@ -3,7 +3,12 @@
    version = "3.0">
    <TimelineItems>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/mykhailobondarenko/Developer/swift-design-patterns/Observer.playground#CharacterRangeLen=14&amp;CharacterRangeLoc=1065&amp;EndingColumnNumber=0&amp;EndingLineNumber=52&amp;StartingColumnNumber=1&amp;StartingLineNumber=51&amp;Timestamp=603708424.0585001"
+         documentLocation = "file:///Users/mykhailobondarenko/Developer/swift-design-patterns/Observer.playground#CharacterRangeLen=14&amp;CharacterRangeLoc=1338&amp;EndingColumnNumber=0&amp;EndingLineNumber=62&amp;StartingColumnNumber=1&amp;StartingLineNumber=61&amp;Timestamp=603708658.712925"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/mykhailobondarenko/Developer/swift-design-patterns/Observer.playground#CharacterRangeLen=26&amp;CharacterRangeLoc=1353&amp;EndingColumnNumber=0&amp;EndingLineNumber=63&amp;StartingColumnNumber=1&amp;StartingLineNumber=62&amp;Timestamp=603708658.713038"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>

@@ -44,9 +44,20 @@ class Pupil: NSObject, PropertyObserver {
     }
 }
 
+class OtherObserver: NSObject, PropertyObserver {
+    var taskForPupil = ""
+    func didGet(new task: String) {
+        taskForPupil = task
+        print("new homework for pupils - \(task)")
+    }
+}
+
 let teacher = Teacher()
 let pupil = Pupil()
+let otherObserver = OtherObserver()
 
 teacher.add(observer: pupil)
+teacher.add(observer: otherObserver)
 teacher.homeTask = "study swift"
 pupil.homeTask
+otherObserver.taskForPupil
