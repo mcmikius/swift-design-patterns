@@ -28,3 +28,37 @@ class MiddleBus: Bus {
     }
 }
 
+protocol Factory {
+    func produceBus() -> Bus
+    func produceCar() -> Car
+}
+
+class LittleSizeFactory: Factory {
+    func produceBus() -> Bus {
+        print("little size bus is created")
+        return LittleBus()
+    }
+    
+    func produceCar() -> Car {
+        print("little size car is created")
+        return LittleCar()
+    }
+    
+}
+class MiddleSizeFactory: Factory {
+    func produceBus() -> Bus {
+        print("middle size bus is created")
+        return MiddleBus()
+    }
+    
+    func produceCar() -> Car {
+        print("middle size car is created")
+        return MiddleCar()
+    }
+}
+
+let littleFactory = LittleSizeFactory()
+littleFactory.produceCar()
+
+let middleFactory = MiddleSizeFactory()
+middleFactory.produceBus()
