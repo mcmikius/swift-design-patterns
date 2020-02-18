@@ -66,5 +66,10 @@ class Human {
 }
 
 let human = Human(swimBehavior: ProfessionalSwimmer(), diveBehavior: ProfessionalDiver())
+human.setSwimBehavior(swimBehavior: NonSwimmer())
 human.performDive()
 human.performSwim()
+let humanTwo = Human(swimBehavior: NonSwimmer(), diveBehavior: NonDiver())
+humanTwo.performDive()
+humanTwo.performSwim()
+humanTwo.run()
