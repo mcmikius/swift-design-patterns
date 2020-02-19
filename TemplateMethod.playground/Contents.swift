@@ -1,7 +1,18 @@
 
-class DriveVehicle {
+protocol DriveVehicle {
+    func haveASeat()
     
-    final func startVehicle() {
+    func closeTheDoor()
+    func useProtection()
+    func lookAtTheMirror()
+    func turnSignal()
+    func driveForward()
+    func startVehicle()
+}
+extension DriveVehicle {
+    
+    
+    func startVehicle() {
         haveASeat()
         useProtection()
         lookAtTheMirror()
@@ -11,6 +22,10 @@ class DriveVehicle {
     
     func haveASeat() {
         preconditionFailure("this method should be overriden")
+        
+    }
+    
+    func closeTheDoor() {
     }
     
     func useProtection() {
@@ -30,31 +45,33 @@ class DriveVehicle {
     }
 }
 
+
 class Bycicle: DriveVehicle {
-    override func haveASeat() {
+    func haveASeat() {
         print("sit down on a bicycle seat")
     }
     
-    override func useProtection() {
+    func useProtection() {
         print("wear a helmet")
     }
     
-    override func lookAtTheMirror() {
+    func lookAtTheMirror() {
         print("look at the little mirror")
     }
     
-    override func turnSignal() {
+    func turnSignal() {
         print("show left hand")
     }
     
-    override func driveForward() {
+    func driveForward() {
         print("padal")
     }
     
 }
 
 class Car: DriveVehicle {
-    override func haveASeat() {
+    func haveASeat() {
+        
         print("sit down on a car seat")
         closeTheDoor()
     }
@@ -64,19 +81,19 @@ class Car: DriveVehicle {
         
     }
     
-    override func useProtection() {
+    func useProtection() {
         print("fasten seat belt")
     }
     
-    override func lookAtTheMirror() {
+    func lookAtTheMirror() {
         print("look at the review mirror")
     }
     
-    override func turnSignal() {
+    func turnSignal() {
         print("turn on left turn light")
     }
     
-    override func driveForward() {
+    func driveForward() {
         print("push padal")
     }
     
