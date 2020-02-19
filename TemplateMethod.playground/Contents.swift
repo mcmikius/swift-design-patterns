@@ -3,7 +3,6 @@ class DriveVehicle {
     
     final func startVehicle() {
         haveASeat()
-        closeTheDoor()
         useProtection()
         lookAtTheMirror()
         turnSignal()
@@ -12,10 +11,6 @@ class DriveVehicle {
     
     func haveASeat() {
         preconditionFailure("this method should be overriden")
-    }
-    
-    func closeTheDoor() {
-        print("if we have a door so close it")
     }
     
     func useProtection() {
@@ -61,6 +56,12 @@ class Bycicle: DriveVehicle {
 class Car: DriveVehicle {
     override func haveASeat() {
         print("sit down on a car seat")
+        closeTheDoor()
+    }
+    
+    func closeTheDoor() {
+        print("close the door")
+        
     }
     
     override func useProtection() {
